@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+form input, form button {
+  border: 0;
+  padding: 1rem;
+  margin: 1rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form input[type=number] {
+  -moz-appearance: textfield;
+}
+form button {
+  cursor: pointer;
+  background-color: rgb(195, 88, 237);
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+div.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.sort button {
+  cursor: pointer;
+  height: 5vh;
+  width: 10vw;
+  border: 0;
+  background-color: rgb(174, 113, 231);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section div.todo {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem;
+  transition: all 0.1s ease;
+}
+section p {
+  background-color: rgb(209, 95, 152);
+  color: antiquewhite;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+section button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+section button.complete {
+  background-color: rgb(55, 143, 55);
+}
+section button.trash {
+  background-color: red;
+}
+section div.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=styles.css.map */
